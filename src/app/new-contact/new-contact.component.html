@@ -1,0 +1,26 @@
+<mat-expansion-panel class='newcontact'>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        New contact
+      </mat-panel-title>
+      <mat-panel-description>
+        New contact Addition
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+    <p>Begins the form to add contacts.</p>
+    <div class="newcontactform">
+        <mat-form-field>
+          <input matInput placeholder="Contact Name" [(ngModel)]='newContact.name'>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Phone" [(ngModel)] = 'newContact.phone'>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]= 'newContact.email'>
+        </mat-form-field>
+        <button mat-fab  color="primary" class='addbtn' (click)='addContact()'>Add</button>
+      </div>
+      
+  
+  </mat-expansion-panel>

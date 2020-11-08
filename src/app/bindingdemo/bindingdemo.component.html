@@ -1,0 +1,19 @@
+<p>bindingdemo</p>
+<h2>{{name}}</h2>
+
+<input #cname type="text" [value]='ctname' (input)='changeName(cname.value)'>
+<button>Test</button>
+<input #c1name type="text"[(ngModel)]='ctname'>
+
+{{ctname}}
+
+<input #contactname type="text">
+<!--<button value="test">Test</button>-->
+<!--<button (click)='addContact($event)'>Test</button>-->
+<button [class] ='buttonclass' [disabled]='isDisabled' (click)='addContact(contactname.value)'>Add</button>
+
+<p>
+    Name {{contact.name}} Phone {{contact.phone}}}
+    <img [src]='contact.imageUrl' alt="test">
+</p>
+
