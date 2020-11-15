@@ -166,6 +166,7 @@ structural directives - add or remove from dom
 
 attribute directives
   - changing the appearance and behaviour of an element
+  - NgModel, NgClass, NgStyle
 
 Component
   directive with a Template
@@ -178,7 +179,198 @@ Next:
 
 1st Angular Assignment.
 
-      
+
+Recap
+------
+Typescript
+
+Angular CLI commands
+  - ng new
+  - ng serve 
+  - ng generate ------
+  - ng build --prod  (dist)
+
+Angular Architecture
+  - Modules
+  - Components
+      - Template
+  - Service
+  - pipes
+  - directives
+  - routing, Guards
+
+Project Structure
+  - main.ts
+  - angular.json
+  - styles.css
+  - package.json
+  - app.module.ts - configuring the module
+  - tsconfig.json
+
+Lifecycle hooks
+  - ngOnInit -- once per component
+  - ngOnChanges -- every time there is a change in input to a component
+  - ngOnDestroy --
+
+Angular Material
+
+Data Binding
+  - interpolation
+  - property binding
+  - event binding
+  - two way binding
+
+Template Reference variables
+
+Directive
+  - attribute directive 
+    NgModel
+
+Agenda: 
+  - Structural Directives
+  - Services & DI
+  - HttpClientModule
+
+
+Services
+    - application logic
+    - interaction with external sources - like REST Calls to APIS
+    - Share data
+
+  - Classes
+
+Dependency Injection Framework
+  - hierarchical
+
+
+HttpClientModule -->  REST calls to APIS
+
+
+RxJS - Reactive extension for Javascript
+Observable - supports async access
+
+
+Next Session
+form- template driven and Reactive form, Routing
+-------------------------------------------------
+
+
+Recap
+-----
+Structural Directives - ngIf, ngFor, ngSwitch
+Services and Dependency Injection
+Send request to Rest API using HTTPClientModule 
+Observables
+
+Agenda
+-------
+
+Form Handling
+  - inputs from user
+  - Validation of Inputs
+  - visual feedback
+  - error messages
+
+Forms
+  - Template(html) Driven Form
+    - controlled by the template( most of the logic)
+    - Simple Scenarios
+    - ngForm and ngModel
+    - FormsModule
+
+
+  - Reactive Forms (Model driven forms)
+    - controlled by the class file( most of the logic)
+    - complex scenarios - cross validation, dynamic fields
+      - FormGroup and FormControl
+      - ReactiveFormsModule
+
+  Tracking the state and validity
+  -------------------------------
+  touched and untouched
+  pristine and dirty
+  valid and invalid
+
+
+Next session:   Routing, Authentication using JWT Tokens, store it in browser(session storage), Guards
+
+
+
+Smart and Dumb Components
+
+Smart (Container) Components 
+    - logic, DI for service...
+
+Dumb Components(presentation component) 
+ - UI, binding, validation ....
+ - Reusable
+ 
+Component Interaction
+---------------------
+
+schematics
+
+
+routes - Parameter, queryparameters
+
+Login
+ queryparam - username
+
+Dashboard 
+
+ActivatedRoute
+
+
+
+Passing information from one to another components
+
+- Routing parameter
+- Input() Output()  (Parent and Child)
+- Service and Subject
+
+
+
+- Create a New Module and Add its separate routing
+- Child routes and its router outlets
+- Schematics
+- Route Parameter and Activated Route
+- Interceptors
+
+next Session
+ : Component Interaction
+            - Parent - child
+                - using @Input and property binding (parent to child)
+                - event binding and @output (child to parent)
+            - Unrelated Components
+                - sevice class
+                - Behaviour subject
+            
+            
+  Behavior Subject
+       
+       Delete
+       Edit Functionality
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

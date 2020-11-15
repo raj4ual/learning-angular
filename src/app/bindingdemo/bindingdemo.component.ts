@@ -20,11 +20,15 @@ export class BindingdemoComponent implements OnInit {
   changeName(name1){
     this.ctname=name1;
   }
+  addContact1(name){
+    console.log('works')
+    console.dir(name)
+    this.buttonclass='btn-bg-clicked'
+  }
   addContact(name){
     console.log('works')
     console.dir(name)
     this.buttonclass='btn-bg-clicked'
   }
-
 
 }

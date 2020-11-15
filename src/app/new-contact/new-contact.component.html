@@ -24,3 +24,29 @@
       
   
   </mat-expansion-panel>
+
+ <!-- <div *ngFor='let contact of contacts'>{{contact.name}} | {{contact.phone}}</div>-->
+  <div *ngIf='contacts.length==0;else elseBlock'>
+    <h2>No Contacts Available</h2>
+  </div>
+  <ng-template #elseBlock>
+  <section class="contact-list">
+    <mat-card class="contact-card" *ngFor='let c of contacts'>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{c.name}}</mat-card-title>
+        <mat-card-subtitle>Contact Detail</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="assets/contact.png" alt="Contact Photo">
+      <mat-card-content>
+        <p>{{c.phone}}</p>
+        <p>{{c.email}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>EDIT</button>
+        <button mat-button>DELETE</button>
+      </mat-card-actions>
+    </mat-card>
+    
+  </section>
+</ng-template>

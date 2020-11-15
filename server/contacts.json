@@ -1,0 +1,40 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "johnny",
+      "phone": "12345",
+      "email": "abc@test.com"
+    },
+    {
+      "id": 2,
+      "name": "gaddar",
+      "phone": "67890",
+      "email": "def@test.com"
+    },
+    {
+      "id": 3,
+      "name": "gabbar",
+      "phone": "121314",
+      "email": "ghi@test.com"
+    },
+    {
+      "name": "aaa",
+      "phone": "11111",
+      "email": "a@a.com",
+      "id": 4
+    },
+    {
+      "name": "bbb",
+      "phone": "222",
+      "email": "b@b.com",
+      "id": 5
+    },
+    {
+      "name": "ccc",
+      "phone": "333",
+      "email": "c@c.com",
+      "id": 6
+    }
+  ]
+}
