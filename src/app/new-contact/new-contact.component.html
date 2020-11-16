@@ -9,18 +9,29 @@
     </mat-expansion-panel-header>
   
     <p>Begins the form to add contacts.</p>
+    <form #newcontactform='ngForm' (ngSubmit)='addContact()'>
     <div class="newcontactform">
         <mat-form-field>
-          <input matInput placeholder="Contact Name" [(ngModel)]='newContact.name'>
+          <input matInput placeholder="Contact Name" [(ngModel)]='newContact.name' 
+          name='name' #name=ngModel required minlength=4>
+          <mat-error *ngIf='name.errors?.required'>Name is required</mat-error>
+          <mat-error *ngIf='name.errors?.minlength'>Name length is not proper</mat-error>
+
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Phone" [(ngModel)] = 'newContact.phone'>
+            <input matInput placeholder="Phone" [(ngModel)] = 'newContact.phone' 
+            name='phone' #phone=ngModel required>
+            <mat-error *ngIf='phone.touched && phone.invalid'>Phone is required</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Email" [(ngModel)]= 'newContact.email'>
+            <input matInput placeholder="Email" [(ngModel)]= 'newContact.email' 
+            name='email' #email=ngModel required>
+            <mat-error *ngIf='email.touched && email.invalid'>Email is required</mat-error>
+
         </mat-form-field>
-        <button mat-fab  color="primary" class='addbtn' (click)='addContact()'>Add</button>
+        <button mat-fab  color="primary" class='addbtn' type="submit" [disabled]='!newcontactform.form.valid'>Add</button>
       </div>
+    </form>
       
   
   </mat-expansion-panel>
@@ -44,7 +55,7 @@
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>EDIT</button>
-        <button mat-button>DELETE</button>
+        <button mat-button class='delbtn' (click)='deleteContact()'>DELETE</button>
       </mat-card-actions>
     </mat-card>
     

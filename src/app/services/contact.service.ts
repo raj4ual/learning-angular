@@ -18,7 +18,7 @@ export class ContactService {
     addContact(newContact:Contact):Observable<Contact>{
      return this.httpClient.post<Contact>(this.contact_api_endpoint,newContact);
     }
-    deleteContact(contact:Contact):Observable<Contact>{
-      return this.httpClient.delete(this.contact_api_endpoint,contact);
-    }
+   // deleteContact(newContact:Contact):Observable<Contact>{
+     // return this.httpClient.delete<Contact>(this.contact_api_endpoint,newContact);
+   // }
 }

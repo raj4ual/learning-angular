@@ -249,6 +249,8 @@ HttpClientModule -->  REST calls to APIS
 RxJS - Reactive extension for Javascript
 Observable - supports async access
 
+Running mock Server --- JSON server 
+PS C:\Users\RajeevRanjan\Documents\FSD\2\learning-angular> json-server --watch .\server\contacts.json
 
 Next Session
 form- template driven and Reactive form, Routing
@@ -290,6 +292,9 @@ Forms
   touched and untouched
   pristine and dirty
   valid and invalid
+
+to convert the form data into json angular Pipes can be used to transform the value fields to change cases and other types
+    {{testForm.value | json}}
 
 
 Next session:   Routing, Authentication using JWT Tokens, store it in browser(session storage), Guards

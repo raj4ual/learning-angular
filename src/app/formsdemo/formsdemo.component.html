@@ -1,0 +1,17 @@
+<form #testForm=ngForm (ngSubmit)='addContact(testForm)'>
+    <input placeholder="name" #name=ngModel [(ngModel)]='contact.name' 
+    [class.error-border]='name.touched && name.invalid'
+    name='name' required minlength="4">
+    {{testForm.errors}}
+    <div *ngIf='name.touched && name.invalid' >
+    <small *ngIf='name.errors.required'  class='error-message'>Name is mandatory</small>
+    <small *ngIf='name.errors.minlength' class='error-message'>Name should have atleast 4 characters</small>
+    </div>
+    <!-- {{name.touched}} {{name.untouched}} {{name.pristine}} {{name.dirty}} {{name.valid}} {{name.invalid}}-->
+    <input placeholder="email" 
+    [class.error-border]='email.touched && email.invalid'
+    #email=ngModel [(ngModel)]='contact.email' name='email' pattern="\w+@\w+\.\w+">
+    <small *ngIf='email.touched && email.invalid'  class='error-message'>Email invalid format</small>
+    <input placeholder="phone" #phone=ngModel [(ngModel)]='contact.phone' name='phone' required>
+    <button type="submit" [disabled]='!testForm.form.valid' class="button">Add</button>
+</form>

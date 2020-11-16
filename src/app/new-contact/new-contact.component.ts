@@ -32,4 +32,11 @@ export class NewContactComponent implements OnInit {
     //this.newContact= new Contact();
     console.log(this.contacts);
   }
+
+  deleteContact(){
+    //  this.cService.deleteContact(this.newContact).subscribe(() =>{
+        const index =this.contacts.indexOf(this.newContact);
+        this.contacts.splice(index,1);
+    //  });
+  }
 }

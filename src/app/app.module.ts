@@ -13,15 +13,20 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { BindingdemoComponent } from './bindingdemo/bindingdemo.component';
 import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card'; 
 import {HttpClientModule} from '@angular/common/http';
+import { FormsdemoComponent } from './formsdemo/formsdemo.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NewContactComponent,
-    BindingdemoComponent
+    BindingdemoComponent,
+    FormsdemoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,8 @@ import {HttpClientModule} from '@angular/common/http';
     MatButtonModule,
     FormsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
