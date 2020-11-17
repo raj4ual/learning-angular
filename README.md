@@ -299,7 +299,11 @@ to convert the form data into json angular Pipes can be used to transform the va
 
 Next session:   Routing, Authentication using JWT Tokens, store it in browser(session storage), Guards
 
+PS C:\Users\RajeevRanjan\Documents\FSD\2\learning-angular> npm install express json-server jsonwebtoken
 
+node server/bin/www
+Generating  a service authentication under the foilder services:
+ng g s services/authentication
 
 Smart and Dumb Components
 
