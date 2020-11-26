@@ -308,6 +308,10 @@ ng g s services/authentication
 NG command to create a module having separate routing:
 ng g module feature --routing
 
+NG command to generate a new component inside feature module
+ng g c feature/component1
+
+
 Smart and Dumb Components
 
 Smart (Container) Components 
@@ -362,7 +366,88 @@ next Session
        
        Delete
        Edit Functionality
-       
+
+  Edit Functionality
+ -----------------------
+ 
+    named router outlet
+    Dialog Box (Material)
+    
+    
+Lazy Loading
+
+Builtin pipes
+Custom Pipe
+
+create SharedModule
+    create common pipes, services in Sgared module
+    - export components and pipes etc from shared module
+
+DashBoard
+    import SharedModule
+Feature1
+    import SharedModule
+    
+ 
+ 
+assignment number 3 - Keep note 3
+
+
+-------------------------------------------
+E2E Testing  - Jasmine + Protractor
+------------------------------------------
+
+    Jasmine
+    --------
+    testing framework
+        - defines test suites
+        - define tests
+        - fixture
+        - assertion
+            - matchers
+        - spy
+        
+        
+        describe - test suites
+        it - test case
+        beforeAll() -- 
+        beforeEach() --
+        afterAll()
+        afterEach()
+        
+        fit() -- focussed test
+        xit() -- exclude test from execution
+        
+        fdescribe
+        xdescribe
+        
+        
+        
+        assertion
+        ----------
+        expect()
+        
+        matchers
+        ---------
+            toBeTruthy
+            toBeFalsy
+            toBe
+            toBeEqual
+            ........
+            
+            
+        
+        
+    Protractor
+    ----------
+        - e2e framework
+        - browser and DOM elements
+        - api - to interact with the page
+            
+        
+
+Unit Test - jasmine + Karma
+     
        
 
 
