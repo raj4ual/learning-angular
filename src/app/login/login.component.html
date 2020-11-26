@@ -6,6 +6,7 @@
         <small *ngIf='username.errors.minlength' class='error-message'>Username should have atleast 4 characters</small>
         </div>
       
-    <input placeholder="password" formControlName='password'>
-    <button type="submit">Login</button>
+    <input placeholder="password" type="password" formControlName='password'>
+    <button type="submit" class="button" [disabled]='!loginform.valid'>Login</button>
+    <small class='error-message' *ngIf='message'>{{message}}</small>
 </form>

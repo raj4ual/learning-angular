@@ -305,6 +305,9 @@ node server/bin/www
 Generating  a service authentication under the foilder services:
 ng g s services/authentication
 
+NG command to create a module having separate routing:
+ng g module feature --routing
+
 Smart and Dumb Components
 
 Smart (Container) Components 

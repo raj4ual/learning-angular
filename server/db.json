@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "virat",
+      "email": "vir@icc.com",
+      "phone": 9999911111
+    },
+    {
+      "id": 2,
+      "name": "Rahul",
+      "email": "rah@icc.com",
+      "phone": 9999922222
+    },
+    {
+      "id": 3,
+      "name": "bumrah",
+      "email": "bum@icc.com",
+      "phone": 9999933333
+    },
+    {
+      "name": "abcd",
+      "phone": "888888",
+      "email": "a@b.com",
+      "id": 4
+    },
+    {
+      "name": "newuser",
+      "phone": "09999911111",
+      "email": "a@b.com",
+      "id": 5
+    },
+    {
+      "name": "Apple",
+      "phone": "888888",
+      "email": "d@e.com",
+      "id": 6
+    },
+    {
+      "name": "heyyyy",
+      "phone": "1111",
+      "email": "hereiam@i.com",
+      "id": 7
+    },
+    {
+      "name": "Orange",
+      "phone": "44353",
+      "email": "bbss",
+      "id": 8
+    }
+  ]
+}

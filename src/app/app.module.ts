@@ -18,6 +18,15 @@ import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsdemoComponent } from './formsdemo/formsdemo.component';
 import { LoginComponent } from './login/login.component';
+import {RouterModule,Routes} from '@angular/router';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+
+//const routes: Routes=[
+//  {path:'login',component:LoginComponent},
+// {path:'contacts',component:NewContactComponent},
+//  {path:'demobind',component:BindingdemoComponent},
+//  {path: '', redirectTo: 'login',pathMatch:'full'}
+//];
 
 @NgModule({
   declarations: [
@@ -26,7 +35,8 @@ import { LoginComponent } from './login/login.component';
     NewContactComponent,
     BindingdemoComponent,
     FormsdemoComponent,
-    LoginComponent
+    LoginComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +50,8 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     MatCardModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+   // RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
